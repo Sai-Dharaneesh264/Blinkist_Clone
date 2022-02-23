@@ -3,7 +3,6 @@ import { Typography } from '@mui/material'
 import BookGrid from '../BookGrid/BookGrid'
 import Buttons from '../../atoms/Buttons/Buttons'
 import { AddIcon } from '../../Icons'
-import { makeStyles } from '@mui/styles'
 
 const allProps = {
   width: '100%',
