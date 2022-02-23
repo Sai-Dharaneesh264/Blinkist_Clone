@@ -1,7 +1,6 @@
 import React from 'react'
-import { Menu, MenuList, MenuItem } from '@mui/material'
 import { Icon1 } from '../../Icons'
-import { Grid, Typography, Tabs, Tab, Box, Link } from '@mui/material'
+import { Grid, Typography, Tabs, Tab, Box, Link, Menu, MenuList, MenuItem  } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { green } from '@mui/material/colors'
 import NavItem from '../../atoms/NavItems/NavItem'
@@ -74,11 +73,11 @@ const useStyles = makeStyles({
       }
    }
 })
-interface contentProps {
+interface ContentProps {
    anchorEl: null | HTMLElement;
    handleClose : () => void;
 }
-const Content = ({ anchorEl, handleClose}: contentProps) => {
+const Content = ({ anchorEl, handleClose}: ContentProps) => {
    const classes = useStyles();
    const open = Boolean(anchorEl);
   return (
