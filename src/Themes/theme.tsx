@@ -305,11 +305,20 @@ const customTheme = createTheme(theme, {
         MuiMenu: {
             styleOverrides: {
                 root: {
-                    width: '100%',
-                    backgroundColor: '#9DA3A673',
+                    width: '120%',
+                    // backgroundColor: '#9DA3A673',
                     marginTop: '86px',
-                    height: '100%'
+                    height: '100%',
+                    // backgroundColor: 'red',
+                    padding: '0px',
+                    left: '0px'
                 },
+                paper: {
+                    left: '0px'
+                },
+                list: {
+                    left: '0px'
+                }
             },
             defaultProps: {
                 transformOrigin: {
@@ -325,7 +334,7 @@ const customTheme = createTheme(theme, {
                     height: '398px',
                     backgroundColor: 'yellow',
                     
-                }
+                },
             }
         },
         MuiMenuItem: {
@@ -336,21 +345,24 @@ const customTheme = createTheme(theme, {
                     paddingLeft: '0px',
                     paddingRight: '0px',
                     display: 'flex',
-                    paddingTop: '28px'
+                    paddingTop: '28px',
+                    '&:hover': {
+                        backgroundColor: 'transparent'
+                    }
                 },
             }
         },
         MuiTabs: {
             styleOverrides: {
                 root: {
-                    width: '912px',
+                    // width: '912px',
                 },
             }
         },
         MuiTab: {
             styleOverrides: {
                 root: {
-                    width: '304px',
+                    // width: '304px',
                     alignItems: 'flex-start',
                     textTransform: 'none',
                     fontSize: theme.typography.body1.fontSize,
@@ -370,6 +382,7 @@ const customTheme = createTheme(theme, {
            },
            styleOverrides: {
                paper: {
+                   left: '0px',
                    padding: '0px',
                    height: '100%',
                    backgroundColor: 'lightblue'
@@ -393,11 +406,63 @@ const customTheme = createTheme(theme, {
                     display: 'flex',
                     // justifyContent: 'center',
                     flexDirection: 'column',
+                    left: '0px'
                     // alignItems: 'center',
                     
+                },
+                elevation: {
+                    left: '0px'
+                },
+                rounded: {
+                    left: "0px"
+                },
+                elevation1: {
+                    left: '0px'
+                },
+                elevation8: {
+                    left: '0px'
+                }
+            
+            }
+        },
+        MuiModal: {
+           styleOverrides: {
+               backdrop: {
+                   padding: '0px',
+                   color: 'yellow'
+               }
+           }
+        },
+        MuiBackdrop: {
+            styleOverrides: {
+                root: {
+                    position: 'relative',
+                    backgroundColor: 'red',
+                    // width: '80%'
+                    right: '130px'
                 }
             }
         },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    textDecoration: 'none',
+                    color: Color.text3.main
+                }
+            }
+        },
+        MuiList: {
+            styleOverrides: {
+                root: {
+                    padding: '0px',
+                    left: '0px'
+                },
+                padding: {
+                    left: '0px'
+                }
+            }
+        }
+
     },
     typography: {
         caption: {

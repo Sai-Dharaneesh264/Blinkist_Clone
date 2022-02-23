@@ -1,8 +1,9 @@
-import React from 'react'
-import { Button, Typography } from '@mui/material'
+import React, { useState, useEffect } from 'react'
+import { Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
-import { RightArrowIcon, TimeIcon } from '../Icons'
-import Buttons from '../atoms/Buttons/Buttons'
+import { TimeIcon } from '../../Icons'
+import ButtonsRow from '../../molecules/ButtonsRow/ButtonsRow'
+import { stateProps } from '../../assets/Types'
 const bookCardStyles = makeStyles({
     icon: {
         width: '16.67px',
@@ -10,26 +11,30 @@ const bookCardStyles = makeStyles({
     },
    
 })
-const BookDetails = () => {
+
+interface Props {
+    bookData: stateProps;
+}
+const BookDetails = ({ bookData }: Props) => {
     const classes = bookCardStyles();
     return (
-        <div style={{height: '304px', }}>
+        <div style={{height: '304px'}}>
             <Typography variant="h1">
-            Beyond Entrepreneurship 2.0
+               {bookData.title}
             </Typography>
             <Typography sx={{marginTop: '24px', fontSize: '20px', lineHeight: '25.14px', fontStyle: 'normal', fontWeight: '400', width: '509'}}>
-            Turning Your Business into an Enduring Great Company
+                Turning Your Business into an Enduring Great Company
             </Typography>
             <Typography variant="body1"  sx={{marginTop: '24px', color: 'text3.main'}}>
-            By Jim Collins and Bill Lazier
+                {bookData.author}
             </Typography>
             <Typography variant="caption" sx={{display: 'flex', alignItems: 'center', marginTop: '19px'}}>
-                            <TimeIcon className={classes.icon}/>
-                            <div>
-                                13-minute read
-                            </div>
+                <TimeIcon className={classes.icon}/>
+                <div>
+                    {bookData.minutes}
+                </div>
             </Typography>
-           <Buttons />
+          <ButtonsRow />
         </div>
     )
 }

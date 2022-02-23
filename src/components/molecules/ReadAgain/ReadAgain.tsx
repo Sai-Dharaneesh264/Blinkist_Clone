@@ -6,7 +6,7 @@ interface Props {
 }
 const ReadAgain = ({ label }: Props) => {
   return (
-    <div style={{width: '100%'}}>
+    <div style={{width: '284px'}}>
         <Button sx={{height: '37px'}} variant="text" color="secondary">
             <Typography variant="body1">
                 {label}

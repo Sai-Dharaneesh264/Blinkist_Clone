@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from '../molecules/Header'
-import Footer from '../organisms/Footer'
+import Header from '../organisms/Header/Header'
+import Footer from '../organisms/Footer/Footer'
 
 
 interface Props {
     children: React.ReactNode;
 }
+
 const Template = ({ children }: Props) => {
   return (
     <div>

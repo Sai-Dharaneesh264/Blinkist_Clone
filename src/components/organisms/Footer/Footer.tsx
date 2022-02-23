@@ -1,13 +1,12 @@
 import React from 'react'
 import { Typography, List, ListItem } from '@mui/material'
-import logo from '../Images/logo.png'
-import Lists from '../Lists'
+import Lists from '../../molecules/Lists/Lists'
 
 
 const SideData = () => {
     return (
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '378px', height: '120px'}}>
-            <img src={logo} alt="logo" style={{width: '99.1px'}}/>
+            <img src='/Images/logo.png' alt="logo" style={{width: '99.1px'}}/>
             <Typography variant="betaSubtitle1" sx={{color: '#0365F2', fontWeight: '500'}}>
                 Big ideas in small packages <br /> Start learning now
             </Typography>

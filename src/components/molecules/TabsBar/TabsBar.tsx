@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tabs, Tab, Box, Typography } from '@mui/material'  
-import BookGrid from '../organisms/BookGrid'
-import ReadAgain from '../pages/ReadAgain'
+import BookGrid from '../../organisms/BookGrid/BookGrid'
+import ReadAgain from '../ReadAgain/ReadAgain'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -68,10 +68,10 @@ const TabsBar = () => {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0} >
-        <BookGrid children={<ReadAgain label="Read Again"/>}/>
+        <BookGrid label="reading" children={<ReadAgain label="Finished"/>}/>
         </TabPanel>
         <TabPanel value={value} index={1}>
-        <BookGrid children={<ReadAgain label="Finished"/>}/>
+        <BookGrid label="Finished" children={<ReadAgain label="Read Again"/>}/>
         </TabPanel>
             </Box>
       </div>

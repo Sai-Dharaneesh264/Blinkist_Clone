@@ -1,31 +1,44 @@
-import React from 'react'
-import { Button, SvgIcon, Typography, Box } from '@mui/material'
-import { RightArrowIcon } from '../../Icons'
+import React, { useState } from 'react'
+import { Button } from '@mui/material'
+import NavItem from '../NavItems/NavItem'
+import { StandardLonghandProperties } from 'csstype'
+import { Color, TypographyVariants } from '../../assets/Types'
+import * as CSS from 'csstype'
+
 interface Props {
-    style: React.CSSProperties;
+    variant?: 'contained' | 'text' | 'outlined';
+    color?: Color;
+    typoColor?: Color;
+    children: string;
+    startIcon?: React.ReactNode;
+    endIcon?: React.ReactNode;
+    width?: StandardLonghandProperties<string | number, (string & {})>['width'];
+    height?:StandardLonghandProperties<string | number, (string & {})>['height'];
+    typo?: TypographyVariants;
+    border?: CSS.Property.Border | number;
+    id?: string
 }
-const Buttons = () => {
+
+
+const Buttons = (props : Props) => {
+    const { children, startIcon, endIcon, width, height, color, variant, typo, typoColor, id} = props;
+    const [isShown, setIsShown] = useState<boolean>(false);
   return (
-    <div>
-         <Box sx={{height: '44px', width: '496px', display: 'flex', justifyContent: 'space-between', marginTop: '83px'}}>
-           <Button variant="outlined" sx={{width: '122px'}}>
-              <Typography variant="body1">
-                Read more
-              </Typography>
-            </Button>
-            <Button variant='contained' sx={{width: '170px'}}>
-              <Typography variant="body1">
-                Finished Reading
-              </Typography>
-            </Button>
-            <Button endIcon={<RightArrowIcon sx={{marginTop: '8px'}} />} variant="text" sx={{color: 'text3.main', width: '136px', display: 'flex', padding: '0px', alignItems: 'center'}}>
-              <Typography variant="body1">
-                Send to Kindle
-              </Typography>
-            </Button>
-         </Box>
+    <div style={{width: width, height: height}}>
+        <Button  
+            // className={class}
+            data-testid={id}
+            variant={variant}
+            color={color} 
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            sx={{ width: '100%', alignItems: 'center' }} 
+        >
+            
+            <NavItem children={children} startIcon={startIcon} endIcon={endIcon} typo={typo} color={typoColor} />
+        </Button>
     </div>
   )
 }
 
-export default Buttons 
+export default Buttons

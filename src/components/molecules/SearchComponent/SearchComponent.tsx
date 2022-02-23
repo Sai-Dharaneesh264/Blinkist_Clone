@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextField, InputAdornment } from '@mui/material'
-import { SearchIcon } from '../Icons'
+import { SearchIcon } from '../../Icons'
 const SearchComponent = () => {
     return (
         <div style={{ width: '912px', margin: '58px auto 0px auto'}}>

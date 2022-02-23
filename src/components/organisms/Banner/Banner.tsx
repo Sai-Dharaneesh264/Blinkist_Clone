@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
-import banner from '../Images/banner.png'
+
 
 const Banner = () => {
     return (
@@ -14,7 +14,7 @@ const Banner = () => {
                         Everything you need to know about thriving on a <br /> shoestring budget, making your first million, and hiring <br />right from the start.
                     </Typography>
                 </div>
-                <img style={{ margin: '17px 45px 67px'}}src={banner} alt="banner" />
+                <img style={{ margin: '17px 45px 67px'}} src='/Images/banner.png' alt="banner" />
                 
             </div>
         </div>
