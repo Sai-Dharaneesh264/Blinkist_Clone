@@ -1,5 +1,4 @@
 import React from 'react'
-import { Typography } from '@mui/material'
 import TabsBar from '../../molecules/TabsBar/TabsBar'
 import NavItem from '../../atoms/NavItems/NavItem'
 import Template from '../../template/Template'

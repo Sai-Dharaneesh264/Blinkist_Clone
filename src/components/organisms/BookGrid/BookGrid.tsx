@@ -3,7 +3,6 @@ import { Grid } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import BookCard from '../../molecules/BookCard/BookCard'
 import axios from 'axios'
-import { stateProps } from '../../assets/Types'
 
 const useStyles = makeStyles({
     grid: {
@@ -24,7 +23,6 @@ interface Props {
 
 const BookGrid = ({children, label}: Props) => {
     const [books, getBooks] = useState<stateProps[]>([]);
-    const [state, setState] = useState<boolean>(false);
     const classes = useStyles();
    
 

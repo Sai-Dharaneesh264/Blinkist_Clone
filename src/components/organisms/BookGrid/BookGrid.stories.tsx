@@ -3,7 +3,6 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import BookGrid from './BookGrid'
 import Buttons from '../../atoms/Buttons/Buttons'
 import { AddIcon } from '../../Icons'
-import { StateProps } from '../../assets/Types'
 import ReadAgain from '../../molecules/ReadAgain/ReadAgain'
 export default {
   title: 'organisms/BookGrid',

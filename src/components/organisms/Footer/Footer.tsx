@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, List, ListItem } from '@mui/material'
+import { Typography } from '@mui/material'
 import Lists from '../../molecules/Lists/Lists'
 
 
