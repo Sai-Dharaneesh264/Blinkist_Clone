@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { render, fireEvent, waitFor, screen } from '@testing-library/react'
-import { Icon1 } from '../../Icons'
+import { render, fireEvent, screen } from '@testing-library/react'
 
 import Buttons from './Buttons'
 

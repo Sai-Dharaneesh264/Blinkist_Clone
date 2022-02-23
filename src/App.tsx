@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles'
-import customTheme from './Themes/theme'
+import customTheme from './Themes/customTheme'
 import BookDetailPage from './components/pages/BookDetailPage/BookDetailPage'
 import MyLibrary from './components/pages/MyLibrary/MyLibrary'
 import LandingPage from './components/pages/LandingPage/LandingPage'
@@ -10,7 +10,7 @@ import {
   Route,
   Routes,
 } from 'react-router-dom'
-// import { Switch } from 'react-router'
+
 const App = () => {
   return (
     // <Banner />

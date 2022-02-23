@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { TimeIcon } from '../../Icons'
 import ButtonsRow from '../../molecules/ButtonsRow/ButtonsRow'
-import { stateProps } from '../../assets/Types'
+import { StateProps } from '../../assets/Types'
 const bookCardStyles = makeStyles({
     icon: {
         width: '16.67px',
@@ -13,7 +13,7 @@ const bookCardStyles = makeStyles({
 })
 
 interface Props {
-    bookData: stateProps;
+    bookData: StateProps;
 }
 const BookDetails = ({ bookData }: Props) => {
     const classes = bookCardStyles();
