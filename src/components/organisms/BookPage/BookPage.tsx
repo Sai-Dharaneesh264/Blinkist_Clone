@@ -3,17 +3,15 @@ import { Typography } from '@mui/material'
 import BookDetails from '../BookDetails/BookDetails'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-import { stateProps } from '../../assets/Types'
+import { StateProps } from '../../assets/Types'
 
 
 
 const BookPage = () => {
-  const [bookdata, setBookData] = useState<stateProps>({});
+  const [bookdata, setBookData] = useState<StateProps>({});
   const { id } = useParams();
-  // const [bookId, setBookId] = useState<string | undefined>('0');
   const bookId = (id === undefined) ? '1' : id;
   const getBookDetail = async () => {
-    // setBookId(id);
       const book = await axios.get(`http://localhost:3004/books/${bookId}`)
       console.log(book.data);
       return book.data;
@@ -21,10 +19,10 @@ const BookPage = () => {
   useEffect(() => { 
      const getData = async () => {
          const books = await getBookDetail();
-         if (books)
-         setBookData(books);
-        //  dest = books;
-     }
+         if (books) {
+          setBookData(books);
+         }     
+      }
      getData();
   }, [])
 

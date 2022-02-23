@@ -132,8 +132,6 @@ interface Props {
    anchorEl: null | HTMLElement;
 }
 const DropDown = ({anchorEl, handleClose}: Props) => {
-
-      const open = Boolean(anchorEl); 
     return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
             
