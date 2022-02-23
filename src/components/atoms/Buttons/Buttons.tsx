@@ -22,7 +22,6 @@ interface Props {
 
 const Buttons = (props : Props) => {
     const { children, startIcon, endIcon, width, height, color, variant, typo, typoColor, id} = props;
-    const [isShown, setIsShown] = useState<boolean>(false);
   return (
     <div style={{width: width, height: height}}>
         <Button  
@@ -30,8 +29,6 @@ const Buttons = (props : Props) => {
             data-testid={id}
             variant={variant}
             color={color} 
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
             sx={{ width: '100%', alignItems: 'center' }} 
         >
             

@@ -1,7 +1,4 @@
 import { createTheme, PaletteColorOptions, PaletteColor } from '@mui/material/styles'
-import {Typography } from '@mui/material'
-import {GlobalStyles } from '@mui/material'
-import { red, yellow } from '@mui/material/colors'
 
 declare module '@mui/material/styles' {
 

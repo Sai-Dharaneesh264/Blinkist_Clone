@@ -1,16 +1,14 @@
 import React from 'react'
-import { Typography, Link} from '@mui/material'
 import { TimeIcon, UserIcon } from '../../Icons'
-import { Card, CardMedia, CardContent, CardActions } from '@mui/material'
-import { stateProps } from '../../assets/Types'
+import { Card, CardMedia, CardContent, CardActions, Typography, Link} from '@mui/material'
+import { StateProps } from '../../assets/Types'
 interface Props {
   children?: React.ReactNode;
-  img: stateProps;
+  img: StateProps;
 }
 
 const BookCard = ({ children, img } : Props) => {
 
-  // console.log('igs = ', Image);
   return (
     <div>
       <Link href={`/bookdetails/${img.id}`}>
