@@ -25,7 +25,6 @@ interface  Props {
   title: string;
 }
 const BooksGroup = ({ title }: Props) => {
-  // const [isShown, setIsShown] = useState<boolean>(false);
   const classes = useStyles();
   return (
     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '80px'}}>
