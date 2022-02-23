@@ -12,20 +12,10 @@ const allProps = {
   startIcon: <AddIcon sx={{height: '24px', display: 'flex', position: 'relative', top: '5px'}} />
 }
 
-const useStyles = makeStyles({
-  hover: {
-    '&:hover': {
-      backgroundColor: 'red',
-      color: 'yellow'
-    }
-  }
-})
-
 interface  Props {
   title: string;
 }
 const BooksGroup = ({ title }: Props) => {
-  const classes = useStyles();
   return (
     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '80px'}}>
         <Typography variant="h3" sx={{width: '912px', marginBottom: "25px"}}>
