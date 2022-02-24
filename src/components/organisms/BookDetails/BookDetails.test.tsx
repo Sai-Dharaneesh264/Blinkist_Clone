@@ -1,7 +1,6 @@
 import React from 'react'
-import { screen, render, fireEvent } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import BookDetails from './BookDetails'
-import { StateProps } from '../../assets/Types'
 
 const data = {
     // id: "1",

@@ -1,7 +1,6 @@
 import React from 'react'
 import { screen, render } from '@testing-library/react'
 import NavItem from './NavItem'
-import { red } from '@mui/material/colors'
 import { Icon1 } from '../../Icons'
 
 
