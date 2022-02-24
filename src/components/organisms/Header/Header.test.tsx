@@ -2,6 +2,7 @@ import React from 'react'
 import { screen, render } from '@testing-library/react'
 import Header from './Header'
 
+import "@testing-library/jest-dom"
 
 test('checks whether the component renders properly', () => {
     render(<Header />)
