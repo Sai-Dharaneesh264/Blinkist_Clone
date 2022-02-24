@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1645708022336" clover="3.2.0">
-  <project timestamp="1645708022337" name="All files">
-    <metrics statements="113" coveredstatements="98" conditionals="18" coveredconditionals="11" methods="43" coveredmethods="33" elements="174" coveredelements="142" complexity="0" loc="113" ncloc="113" packages="23" files="23" classes="23"/>
+<coverage generated="1645709520038" clover="3.2.0">
+  <project timestamp="1645709520038" name="All files">
+    <metrics statements="112" coveredstatements="97" conditionals="16" coveredconditionals="10" methods="43" coveredmethods="33" elements="171" coveredelements="140" complexity="0" loc="112" ncloc="112" packages="23" files="23" classes="23"/>
     <package name="components">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Icons.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/Icons.tsx">
@@ -138,9 +138,9 @@
       </file>
     </package>
     <package name="components.organisms.BookGrid">
-      <metrics statements="14" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="3"/>
+      <metrics statements="13" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="3"/>
       <file name="BookGrid.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/BookGrid/BookGrid.tsx">
-        <metrics statements="14" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="3"/>
+        <metrics statements="13" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="3"/>
         <line num="7" count="5" type="stmt"/>
         <line num="24" count="5" type="stmt"/>
         <line num="25" count="8" type="stmt"/>
@@ -148,13 +148,12 @@
         <line num="28" count="8" type="stmt"/>
         <line num="29" count="8" type="stmt"/>
         <line num="30" count="8" type="stmt"/>
-        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="35" count="8" type="stmt"/>
-        <line num="38" count="8" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
       </file>
     </package>
     <package name="components.organisms.BookPage">

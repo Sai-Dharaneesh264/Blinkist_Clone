@@ -28,9 +28,7 @@ const BookGrid = ({children, label}: Props) => {
     useEffect(() => {
         const getData = async () => {
             const allBooks = await getAllBooks();
-            if (allBooks) {
-                getBooks(allBooks)
-            }
+            getBooks(allBooks)
         }
         getData();
     }, [])
