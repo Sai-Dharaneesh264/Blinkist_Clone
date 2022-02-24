@@ -1,6 +1,7 @@
 import React from 'react'
 import { screen, render} from '@testing-library/react'
 import Footer from './Footer'
+import "@testing-library/jest-dom"
 
 
 test('checks whether the component renders properly', () => {
