@@ -21,7 +21,7 @@ export const bookDetails = Template.bind({})
 
 bookDetails.args = {
     bookData:  {
-        "id":1,
+        "id":'1',
         "image": "/Images/2.png",
         "title":"Bring Your Human to Work",
         "author":"Erica Keswin",
