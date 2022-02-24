@@ -4,6 +4,7 @@ import { makeStyles } from '@mui/styles'
 import BookCard from '../../molecules/BookCard/BookCard'
 import axios from 'axios'
 import { StateProps } from '../../assets/Types'
+import { getAllBooks } from '../../apis/Requests'
 const useStyles = makeStyles({
     grid: {
         marginTop: '25px', 
@@ -24,21 +25,19 @@ interface Props {
 const BookGrid = ({children, label}: Props) => {
     const [books, getBooks] = useState<StateProps[]>([]);
     const classes = useStyles();
-   
 
     useEffect(() => {
-        const getAllBooks = async () => {
-           const res = await axios.get('http://localhost:3004/books')
-            .then(response => {
-                return response.data;                
-            })
-            getBooks(res);
+        const getData = async () => {
+            const allBooks = await getAllBooks();
+            if (allBooks) {
+                getBooks(allBooks)
+            }
         }
-        getAllBooks();
+        getData();
     }, [])
 
   return (
-        <Grid container  sx={{width: '912px', marginTop: '25px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '28px'}}>
+        <Grid data-testid="grid_container" container  sx={{width: '912px', marginTop: '25px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '28px'}}>
             {
                 label === undefined ?
                 books.map((book) => {

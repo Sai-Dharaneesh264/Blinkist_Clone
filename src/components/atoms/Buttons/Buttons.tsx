@@ -12,8 +12,8 @@ interface Props {
     children: string;
     startIcon?: React.ReactNode;
     endIcon?: React.ReactNode;
-    width?: StandardLonghandProperties<string | number, (string & {})>['width'];
-    height?:StandardLonghandProperties<string | number, (string & {})>['height'];
+    width?: StandardLonghandProperties<string | number, (string)>['width'];
+    height?:StandardLonghandProperties<string | number, (string)>['height'];
     typo?: TypographyVariants;
     border?: CSS.Property.Border | number;
     id?: string

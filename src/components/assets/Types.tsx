@@ -8,7 +8,7 @@ export type Color = "inherit" | "primary" | "secondary" | "success" | "error" | 
 export type TypographyVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "subtitle1" | "subtitle2" | "body1" | "body2" | "caption" | "button" | "overline" | "subtitle5" | "caption3" | "inherit" | 'betaBody1' | 'subtitle3' | undefined 
 
 export interface StateProps {
-    id?:number;
+    id?:string;
     image?: string;
     title?: string;
     author?: string;

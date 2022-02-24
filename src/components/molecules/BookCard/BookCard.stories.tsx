@@ -24,7 +24,7 @@ const Template: ComponentStory<typeof BookCard> = (args) => <BookCard  {...args}
 export const Primary = Template.bind({});
 
 const data = {
-    "id":1,
+    "id":'1',
     "image": "/Images/1.png",
     "title":"Bring Your Human to Work",
     "author":"Erica Keswin",
