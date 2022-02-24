@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1645688979574" clover="3.2.0">
-  <project timestamp="1645688979575" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1645707171062" clover="3.2.0">
+  <project timestamp="1645707171062" name="All files">
+    <metrics statements="25" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="11" elements="39" coveredelements="37" complexity="0" loc="25" ncloc="25" packages="7" files="7" classes="7"/>
+    <package name="atoms.Buttons">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Buttons.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/atoms/Buttons/Buttons.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="atoms.NavItems">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="NavItem.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/atoms/NavItems/NavItem.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="molecules.Lists">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Lists.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/Lists/Lists.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="molecules.ReadAgain">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ReadAgain.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/ReadAgain/ReadAgain.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="molecules.TabsMenu">
+      <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <file name="TabsMenu.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/TabsMenu/TabsMenu.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="6" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="organisms.Banner">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Banner.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/Banner/Banner.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="organisms.Footer">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Footer.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/Footer/Footer.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
