@@ -2,6 +2,8 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Banner from './Banner'
 
+import "@testing-library/jest-dom"
+
 it('checks whether the component renders properly', () => {
     render(<Banner />)
 })

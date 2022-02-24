@@ -2,6 +2,7 @@ import React from 'react'
 import { screen, render } from '@testing-library/react'
 import TabsBar from './TabsBar'
 
+import "@testing-library/jest-dom"
 
 it('checks whether component renders properly', () => {
     render(<TabsBar/>)

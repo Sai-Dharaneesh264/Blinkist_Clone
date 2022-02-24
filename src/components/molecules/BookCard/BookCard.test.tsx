@@ -4,6 +4,7 @@ import BookCard from './BookCard'
 import Buttons from '../../atoms/Buttons/Buttons'
 import { AddIcon } from '../../Icons'
 import ReadAgain from '../ReadAgain/ReadAgain'
+import "@testing-library/jest-dom"
 
 const data = {
     id:"1",

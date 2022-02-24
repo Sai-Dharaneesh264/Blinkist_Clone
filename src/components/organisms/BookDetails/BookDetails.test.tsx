@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import BookDetails from './BookDetails'
 
+import "@testing-library/jest-dom"
 const data = {
     // id: "1",
     // image: "/Images/1.png",

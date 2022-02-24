@@ -3,6 +3,7 @@ import { screen, render } from '@testing-library/react'
 import NavItem from './NavItem'
 import { Icon1 } from '../../Icons'
 
+import "@testing-library/jest-dom"
 
 test('to check whether the text renders', () => {
     render(<NavItem children="click me" />)

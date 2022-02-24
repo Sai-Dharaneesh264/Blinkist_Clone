@@ -6,6 +6,9 @@ import '@testing-library/jest-dom/extend-expect'
 import BookGrid from './BookGrid'
 import Buttons from '../../atoms/Buttons/Buttons'
 import { getAllBooks } from '../../apis/Requests'
+
+import "@testing-library/jest-dom"
+
 const server = setupServer(
     rest.get('http://localhost:3004/books', (req, res, ctx) => {
         return res(
