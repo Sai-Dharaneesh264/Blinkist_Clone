@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { StateProps } from '../assets/Types'
 
 export const getAllBooks = async () => {
     const res = await axios.get('http://localhost:3004/books')

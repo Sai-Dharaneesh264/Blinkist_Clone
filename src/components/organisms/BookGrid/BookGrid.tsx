@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Grid } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import BookCard from '../../molecules/BookCard/BookCard'
-import axios from 'axios'
 import { StateProps } from '../../assets/Types'
 import { getAllBooks } from '../../apis/Requests'
 const useStyles = makeStyles({
