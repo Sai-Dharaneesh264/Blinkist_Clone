@@ -5,6 +5,9 @@ import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import BookPage from './BookPage'
 import { getBookDetail } from '../../apis/Requests'
+
+import "@testing-library/jest-dom"
+
 const server = setupServer(
     rest.get('http://localhost:3004/books/1', (req, res, ctx) => {
         return res(

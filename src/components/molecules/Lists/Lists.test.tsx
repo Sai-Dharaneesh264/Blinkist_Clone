@@ -2,6 +2,7 @@ import React from 'react'
 import { screen, render } from '@testing-library/react'
 import Lists from './Lists';
 
+import "@testing-library/jest-dom"
 
 it('checks whether the component render', () => {
     render(<Lists />)

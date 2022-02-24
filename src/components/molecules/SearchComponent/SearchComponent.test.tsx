@@ -2,6 +2,7 @@ import React from 'react'
 import { screen, render } from '@testing-library/react'
 import SearchComponent from './SearchComponent'
 
+import "@testing-library/jest-dom"
 
 it('checks whether the component renders properly', () => {
     render(<SearchComponent />)

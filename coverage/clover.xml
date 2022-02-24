@@ -1,72 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1645707171062" clover="3.2.0">
-  <project timestamp="1645707171062" name="All files">
-    <metrics statements="25" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="11" elements="39" coveredelements="37" complexity="0" loc="25" ncloc="25" packages="7" files="7" classes="7"/>
-    <package name="atoms.Buttons">
+<coverage generated="1645708022336" clover="3.2.0">
+  <project timestamp="1645708022337" name="All files">
+    <metrics statements="113" coveredstatements="98" conditionals="18" coveredconditionals="11" methods="43" coveredmethods="33" elements="174" coveredelements="142" complexity="0" loc="113" ncloc="113" packages="23" files="23" classes="23"/>
+    <package name="components">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Icons.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/Icons.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="14" type="stmt"/>
+        <line num="9" count="14" type="stmt"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="20" count="14" type="stmt"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="30" count="14" type="stmt"/>
+        <line num="35" count="14" type="stmt"/>
+        <line num="40" count="14" type="stmt"/>
+        <line num="45" count="14" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.apis">
+      <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="Requests.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/apis/Requests.tsx">
+        <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.atoms.Buttons">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Buttons.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/atoms/Buttons/Buttons.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="24" count="22" type="stmt"/>
+        <line num="25" count="18" type="stmt"/>
       </file>
     </package>
-    <package name="atoms.NavItems">
+    <package name="components.atoms.NavItems">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="NavItem.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/atoms/NavItems/NavItem.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
       </file>
     </package>
-    <package name="molecules.Lists">
+    <package name="components.molecules.BookCard">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="BookCard.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/BookCard/BookCard.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.ButtonsRow">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ButtonsRow.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/ButtonsRow/ButtonsRow.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.Lists">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Lists.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/Lists/Lists.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
       </file>
     </package>
-    <package name="molecules.ReadAgain">
+    <package name="components.molecules.ReadAgain">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="ReadAgain.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/ReadAgain/ReadAgain.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="molecules.TabsMenu">
+    <package name="components.molecules.SearchComponent">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="SearchComponent.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/SearchComponent/SearchComponent.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.TabsBar">
+      <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <file name="TabsBar.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/TabsBar/TabsBar.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="8" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.TabsMenu">
       <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
       <file name="TabsMenu.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/molecules/TabsMenu/TabsMenu.tsx">
         <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="32" count="6" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="6" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="50" count="2" type="stmt"/>
-        <line num="52" count="2" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="9" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
-        <line num="56" count="2" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="organisms.Banner">
+    <package name="components.organisms.Banner">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Banner.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/Banner/Banner.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="organisms.Footer">
+    <package name="components.organisms.BookDetails">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="BookDetails.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/BookDetails/BookDetails.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.BookGrid">
+      <metrics statements="14" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="3"/>
+      <file name="BookGrid.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/BookGrid/BookGrid.tsx">
+        <metrics statements="14" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="3"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="28" count="8" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="38" count="8" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.BookPage">
+      <metrics statements="11" coveredstatements="6" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <file name="BookPage.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/BookPage/BookPage.tsx">
+        <metrics statements="11" coveredstatements="6" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.BooksGroup">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="BooksGroup.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/BooksGroup/BooksGroup.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.DropDown">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="DropDown.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/DropDown/DropDown.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="69" count="5" type="stmt"/>
+        <line num="80" count="5" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="114" count="15" type="stmt"/>
+        <line num="134" count="5" type="stmt"/>
+        <line num="135" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.Footer">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Footer.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/Footer/Footer.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.Header">
+      <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="1"/>
+      <file name="Header.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/organisms/Header/Header.tsx">
+        <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="1"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.pages.BookDetailPage">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="BookDetailPage.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/pages/BookDetailPage/BookDetailPage.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.pages.LandingPage">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="LandingPage.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/pages/LandingPage/LandingPage.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.pages.MyLibrary">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="MyLibrary.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/pages/MyLibrary/MyLibrary.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.template">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Template.tsx" path="/home/saidg/Desktop/zemoso-training/blinklist-app/src/components/template/Template.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
       </file>
     </package>
   </project>
