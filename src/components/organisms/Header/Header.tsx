@@ -3,11 +3,15 @@ import { Link, AppBar, Typography, IconButton, Toolbar, Avatar, Container } from
 import { SearchIcon, DownArrowIcon, UpArrowIcon } from '../../Icons'
 import { orange } from '@mui/material/colors'
 import DropDown from '../DropDown/DropDown'
+import LogoutButton from '../../../LogoutButton'
 
 const Header = () => {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-      setAnchorEl(event.currentTarget);
+      if (anchorEl === null)
+        setAnchorEl(event.currentTarget);
+        else
+        handleClose();
     };
     
     const handleClose = () => {
@@ -42,13 +46,14 @@ const Header = () => {
                             </Typography>
                             </Link>
                         </div>
-                        <div style={{display: 'flex', alignItems:'center'}}>
+                        {/* <div style={{display: 'flex', alignItems:'center'}}>
                             <Avatar sx={{ display: 'flex', justifyContent: 'flexEnd', backgroundColor: orange[500]}}>
                                 S
                             </Avatar>
                             
-                            <DownArrowIcon sx={{marginLeft: '5px', marginTop: '20px'}}/>
-                        </div>
+                            <DownArrowIcon sx={{marginLeft: '5px', marginTop: '20px'}}/> */}
+                        {/* </div> */}
+                        <LogoutButton />
                     </Toolbar>
                 </Container>
             </AppBar>
