@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { TimeIcon, UserIcon } from '../../Icons'
 import { Card, CardMedia, CardContent, CardActions, Typography, Link} from '@mui/material'
 import { StateProps } from '../../assets/Types'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch} from 'react-redux'
 import { getBook } from '../../../features/BookReducer'
 interface Props {
   children?: React.ReactNode;

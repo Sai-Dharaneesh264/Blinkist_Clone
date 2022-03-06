@@ -3,16 +3,17 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { Avatar, Button, Menu, MenuItem } from '@mui/material';
 import { DownArrowIcon, UpArrowIcon } from './components/Icons';
 import { orange } from '@mui/material/colors'
-import { HorizontalRule } from '@mui/icons-material';
 
 const LogoutButton = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    if (anchorEl === null)
-    setAnchorEl(event.currentTarget);
-    else
-    handleClose();
+    if (anchorEl === null) {
+      setAnchorEl(event.currentTarget);
+    }
+    else {
+      handleClose();
+    }
   };
   const handleClose = () => {
     setAnchorEl(null);
@@ -59,12 +60,6 @@ const LogoutButton = () => {
       </Menu>
     </div>
   );
-  //   const { logout } = useAuth0();
-  // return (
-  //   <button onClick={() => logout({returnTo: window.location.origin})}>
-  //       Log Out
-  //   </button>
-  // )
 }
 
 export default LogoutButton

@@ -37,31 +37,30 @@ const bookSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers: (builder) => {
-       builder.addCase(getBook.pending, (state, action) => {
-           state.status = 'loading'
-       })
-       builder.addCase(getBook.fulfilled, (state, {payload}) => {
-           state.status = 'success'
-           console.log('payload =', payload)
-           state.book = payload
-       })
+        builder.addCase(getBook.pending, (state, action) => {
+            state.status = 'loading'
+        })
+        builder.addCase(getBook.fulfilled, (state, action) => {
+            state.status = 'success'
+            state.book = action.payload
+        })
 
-       builder.addCase(getBook.rejected, (state, action) => {
-           state.status = 'failed'
-       })
+        builder.addCase(getBook.rejected, (state, action) => {
+            state.status = 'failed'
+        })
 
-       builder.addCase(getOneBook.pending, (state, action) => {
-        state.status = 'loading'
-    })
-    builder.addCase(getOneBook.fulfilled, (state, {payload}) => {
-        state.status = 'success'
-        console.log('payload =', payload)
-        state.book = payload
-    })
+        builder.addCase(getOneBook.pending, (state, action) => {
+            state.status = 'loading'
+        })
+        
+        builder.addCase(getOneBook.fulfilled, (state, {payload}) => {
+            state.status = 'success'
+            state.book = payload
+        })
 
-    builder.addCase(getOneBook.rejected, (state, action) => {
-        state.status = 'failed'
-    })
+        builder.addCase(getOneBook.rejected, (state, action) => {
+            state.status = 'failed'
+        })
     }
     
 
