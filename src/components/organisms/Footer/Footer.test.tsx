@@ -1,15 +1,14 @@
-import React from 'react'
-import { screen, render} from '@testing-library/react'
-import Footer from './Footer'
-import "@testing-library/jest-dom"
-
+import React from 'react';
+import { screen, render }  from '@testing-library/react';
+import Footer from './Footer';
+import "@testing-library/jest-dom";
 
 test('checks whether the component renders properly', () => {
-    render(<Footer />)
+    render(<Footer />);
 })
 
 test('checks the content', () => {
-    render(<Footer />)
+ render(<Footer />);
     const imgElement = screen.getByAltText('logo');
     expect(imgElement).toBeInTheDocument()
 })

@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Auth0ProviderWithHistory from './Auth0ProviderWithHistory';
+import { Provider } from 'react-redux'
+import { store } from './store/store'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Auth0ProviderWithHistory>
+    <Provider store={store}>
     <App />
-  </React.StrictMode>,
+    </Provider>
+  </Auth0ProviderWithHistory>,
   document.getElementById('root')
 );
 

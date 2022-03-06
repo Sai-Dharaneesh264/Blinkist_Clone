@@ -2,14 +2,13 @@
     "books": [
       {
         "id": "1",
-        "image": "/Images/2.png",
+        "image": "/Images/1.png",
         "title": "Bring Your Human to Work",
         "author": "Erica Keswin",
         "minutes": "13-minute read",
         "reads": "",
         "status": "currentlyReading",
-        "type": "Trending",
-        "audio": true
+        "type": "Trending"
       },
       {
         "id": "2",

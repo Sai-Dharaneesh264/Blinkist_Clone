@@ -3,7 +3,12 @@ import { Grid } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import BookCard from '../../molecules/BookCard/BookCard'
 import { StateProps } from '../../assets/Types'
-import { getAllBooks } from '../../apis/Requests'
+// import { getAllBooks as getBooks} from '../../apis/Requests'
+
+import { useSelector, useDispatch } from 'react-redux'
+import { RootState } from '../../../store/store'
+import { getBooks } from '../../../features/BooksReducer'
+
 const useStyles = makeStyles({
     grid: {
         marginTop: '25px', 
@@ -22,16 +27,15 @@ interface Props {
 
 
 const BookGrid = ({children, label}: Props) => {
-    const [books, getBooks] = useState<StateProps[]>([]);
+    // const [books, setBooks] = useState<StateProps[]>([]);
+    const [state, setState] = useState<boolean>(false);
     const classes = useStyles();
-
+    const dispatch = useDispatch()
+    const {books} = useSelector((state: RootState)=> state.books);
+    
     useEffect(() => {
-        const getData = async () => {
-            const allBooks = await getAllBooks();
-            getBooks(allBooks)
-        }
-        getData();
-    }, [])
+       dispatch(getBooks())
+    }, [dispatch])
 
   return (
         <Grid data-testid="grid_container" container  sx={{width: '912px', marginTop: '25px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '28px'}}>
