@@ -8,6 +8,12 @@ import { RootState } from '../../../store/store'
 
 const BookPage = () => {
 
+  const dummy = {
+    id: '0',
+    title: 'Unknown',
+    author: 'Not Known',
+    reads: ''
+  }
   const { id } = useParams()
   const dispatch = useDispatch()
 
@@ -24,7 +30,7 @@ const BookPage = () => {
     Get the key ideas from
     </Typography>
     <div style={{ marginTop: '40px', width: '912px', display: 'flex', justifyContent: 'space-between'}}>
-        <BookDetails bookData={book} />
+        <BookDetails bookData={book.id === '234'? dummy : book} />
         <img src={book.image} alt="book" width="304px" height="304px" />
     </div>
 </div>

@@ -29,12 +29,7 @@ test('checks whether component renders', () => {
     expect(grid).toBeInTheDocument();
 })
 
-test('loads and displays data', async () => {
-    render(<Provider store={store}><BookPage /></Provider>)
-   const response = await getBookDetail('1')
-   expect(response).toEqual({id: '1', data: '12'})
-    
-})
+
 
 
 
