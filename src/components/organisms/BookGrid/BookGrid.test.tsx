@@ -5,7 +5,9 @@ import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import BookGrid from './BookGrid'
 import Buttons from '../../atoms/Buttons/Buttons'
-import { getAllBooks } from '../../apis/Requests'
+import { getBooks } from '../../../features/BooksReducer'
+import { Provider } from 'react-redux'
+import { store } from '../../../store/store'
 
 import "@testing-library/jest-dom"
 
@@ -23,16 +25,12 @@ afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
 test('checks whether component renders', () => {
-    render(<BookGrid children={<Buttons children="click me" />} />)
+    render(<Provider store={store}><BookGrid children={<Buttons children="click me" />} /> </Provider>)
     const grid = screen.getByTestId('grid_container')
     expect(grid).toBeInTheDocument();
 })
 
-test('loads and displays data', async () => {
-   const response = await getAllBooks()
-   expect(response).toEqual({id: '1', data: '123'})
-    
-})
+
 
 
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Grid } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import BookCard from '../../molecules/BookCard/BookCard'

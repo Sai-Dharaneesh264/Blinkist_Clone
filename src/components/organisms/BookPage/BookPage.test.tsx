@@ -6,6 +6,8 @@ import '@testing-library/jest-dom/extend-expect'
 import BookPage from './BookPage'
 import { getBookDetail } from '../../apis/Requests'
 
+import { Provider } from 'react-redux'
+import { store } from '../../../store/store'
 import "@testing-library/jest-dom"
 
 const server = setupServer(
@@ -22,13 +24,13 @@ afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
 test('checks whether component renders', () => {
-    render(<BookPage />)
+    render(<Provider store={store}><BookPage /></Provider>)
     const grid = screen.getByTestId('book_page')
     expect(grid).toBeInTheDocument();
 })
 
 test('loads and displays data', async () => {
-    render(<BookPage />)
+    render(<Provider store={store}><BookPage /></Provider>)
    const response = await getBookDetail('1')
    expect(response).toEqual({id: '1', data: '12'})
     

@@ -10,8 +10,6 @@ import {
   Route,
   Routes,
 } from 'react-router-dom'
-import { getBooks } from './requests'
-import LogoutButton from './LogoutButton';
 const App = () => {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
   if (isLoading) {

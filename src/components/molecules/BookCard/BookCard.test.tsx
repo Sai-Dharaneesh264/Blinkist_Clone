@@ -6,6 +6,8 @@ import { AddIcon } from '../../Icons'
 import ReadAgain from '../ReadAgain/ReadAgain'
 import "@testing-library/jest-dom"
 
+import { Provider } from 'react-redux'
+import { store } from '../../../store/store'
 const data = {
     id:"1",
     image: "/Images/1.png",
@@ -24,19 +26,19 @@ const allProps = {
   }
 
 test('test in bookcard', () => {
-    render(<BookCard img={data} children={<Buttons variant='contained' {...allProps} color="secondary" />} />)
+    render(<Provider store={store}><BookCard img={data} children={<Buttons variant='contained' {...allProps} color="secondary" />} /></Provider>)
     const btnElement = screen.getByText('Add to library')
     expect(btnElement).toBeInTheDocument()
 })
 
 test('on click test on add to library', () => {
-    render(<BookCard img={data} children={<Buttons variant='contained' {...allProps} color="secondary" />} />)
+    render(<Provider store={store}><BookCard img={data} children={<Buttons variant='contained' {...allProps} color="secondary" />} /></Provider>)
     const btnElement = screen.getByRole('button')
     fireEvent.click(btnElement)
 })
 
 test('read again bookcard test', () => {
-    render(<BookCard img={data} children={<ReadAgain label='reading' />} />)
+    render(<Provider store={store}><BookCard img={data} children={<ReadAgain label='reading' />} /></Provider>)
     const btnElement = screen.getByText('reading')
     expect(btnElement).toBeInTheDocument();
 })
