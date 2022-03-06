@@ -6,11 +6,7 @@ export const getBooks = createAsyncThunk('books/getBooks',
     async () => {
         console.log('entered');
         const response =  await axios.get('http://localhost:3004/books')
-        // .then(res => res.data)
-        // .catch(err => console.log('error =', err));
         return response.data
-        // console.log('once in a diamond', data);
-        // return data;
     }
 )
 interface Props {
@@ -43,7 +39,5 @@ const booksSlice = createSlice({
     
 
 })
-
-// export const { getBooks } = booksSlice.actions;
 
 export default booksSlice.reducer;

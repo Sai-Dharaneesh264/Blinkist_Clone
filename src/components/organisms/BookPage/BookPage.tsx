@@ -3,17 +3,13 @@ import { Typography } from '@mui/material'
 import BookDetails from '../BookDetails/BookDetails'
 import { useParams } from 'react-router-dom'
 import { StateProps } from '../../assets/Types'
-import { getBookDetail } from '../../apis/Requests'
 import { getOneBook } from '../../../features/BookReducer'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../../store/store'
 
 const BookPage = () => {
-  const [bookdata, setBookData] = useState<StateProps>({});
 
   const { id } = useParams()
-  
-  const bookId = (id === undefined) ? '1' : id;
   const dispatch = useDispatch()
 
   const { book } = useSelector((state: RootState) => state.book)

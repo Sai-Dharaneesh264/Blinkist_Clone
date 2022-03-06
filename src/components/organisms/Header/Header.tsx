@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { Link, AppBar, Typography, IconButton, Toolbar, Avatar, Container } from '@mui/material'
+import { Link, AppBar, Typography, IconButton, Toolbar, Container } from '@mui/material'
 import { SearchIcon, DownArrowIcon, UpArrowIcon } from '../../Icons'
-import { orange } from '@mui/material/colors'
 import DropDown from '../DropDown/DropDown'
 import LogoutButton from '../../../LogoutButton'
 
@@ -10,8 +9,9 @@ const Header = () => {
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
       if (anchorEl === null)
         setAnchorEl(event.currentTarget);
-        else
-        handleClose();
+        else {
+            handleClose();
+        }
     };
     
     const handleClose = () => {
@@ -38,7 +38,6 @@ const Header = () => {
                             {
                                 !anchorEl ? <DownArrowIcon sx={{marginTop: '15px', marginLeft: '5px'}}/> : <UpArrowIcon />
                             }
-                                {/* <DownArrowIcon /> */}
                             </IconButton>
                             <Link href="/mylibrary">
                             <Typography variant="body1" sx={{fontWeight: '500', color: '#03314B'}}>
@@ -46,13 +45,6 @@ const Header = () => {
                             </Typography>
                             </Link>
                         </div>
-                        {/* <div style={{display: 'flex', alignItems:'center'}}>
-                            <Avatar sx={{ display: 'flex', justifyContent: 'flexEnd', backgroundColor: orange[500]}}>
-                                S
-                            </Avatar>
-                            
-                            <DownArrowIcon sx={{marginLeft: '5px', marginTop: '20px'}}/> */}
-                        {/* </div> */}
                         <LogoutButton />
                     </Toolbar>
                 </Container>

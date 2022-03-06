@@ -2,21 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { TimeIcon, UserIcon } from '../../Icons'
 import { Card, CardMedia, CardContent, CardActions, Typography, Link} from '@mui/material'
 import { StateProps } from '../../assets/Types'
-import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { getBook } from '../../../features/BookReducer'
-import { getBooks } from '../../../features/BooksReducer'
-
-import { RootState } from '../../../store/store'
 interface Props {
   children?: React.ReactNode;
   img: StateProps;
+  status?: "lib";
 }
 
 const CardComponent = ({children, img}: Props) => {
-  const [state, setState] = useState<boolean>(true);
   const [id, setId] = useState<string | undefined>();
-  const { book } = useSelector((state: RootState) => state.book);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBook({id: id, status: img.status}));
@@ -67,16 +62,13 @@ const CardComponent = ({children, img}: Props) => {
   )
 }
 
-const BookCard = ({ children, img } : Props) => {
-
-  // console.log('label', label);
-
+const BookCard = ({ children, img, status } : Props) => {
 
   return (
     <div>
     {
-      img.status === undefined ? 
-      <Link href={`http://localhost:3000/bookdetails/${img.id}`} >
+      status === undefined ? 
+      <Link href={`/bookdetails/1`} >
         <CardComponent children={children} img={img} />
       </Link>
       :
