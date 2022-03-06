@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/atoms/Buttons/Buttons.tsx</title>
+    <title>Code coverage report for molecules/ButtonsRow/ButtonsRow.tsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../prettify.css" />
-    <link rel="stylesheet" href="../../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/atoms/Buttons</a> Buttons.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">molecules/ButtonsRow</a> ButtonsRow.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -97,37 +97,25 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -144,62 +132,56 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
-import { Button } from '@mui/material'
-import NavItem from '../NavItems/NavItem'
-import { StandardLonghandProperties } from 'csstype'
-import { Color, TypographyVariants } from '../../assets/Types'
-import * as CSS from 'csstype'
+import { Box } from '@mui/material'
+import { RightArrowIcon } from '../../Icons'
+import Buttons from '../../atoms/Buttons/Buttons'
 &nbsp;
-interface Props {
-    variant?: 'contained' | 'text' | 'outlined';
-    color?: Color;
-    typoColor?: Color;
-    children: string;
-    startIcon?: React.ReactNode;
-    endIcon?: React.ReactNode;
-    width?: StandardLonghandProperties&lt;string | number, (string)&gt;['width'];
-    height?:StandardLonghandProperties&lt;string | number, (string)&gt;['height'];
-    typo?: TypographyVariants;
-    border?: CSS.Property.Border | number;
-    id?: string
-}
-&nbsp;
-&nbsp;
-const Buttons = (props : Props) =&gt; {
-    const { children, startIcon, endIcon, width, height, color, variant, typo, typoColor, id} = props;
+const ButtonsRow = () =&gt; {
   return (
-    &lt;div style={{width: width, height: height}}&gt;
-        &lt;Button  
-            // className={class}
-            data-testid={id}
-            variant={variant}
-            color={color} 
-            sx={{ width: '100%', alignItems: 'center' }} 
-        &gt;
-            
-            &lt;NavItem children={children} startIcon={startIcon} endIcon={endIcon} typo={typo} color={typoColor} /&gt;
-        &lt;/Button&gt;
+    &lt;div&gt;
+         &lt;Box sx={{height: '44px', width: '496px', display: 'flex', justifyContent: 'space-between',marginTop: '83px'}}&gt;
+           &lt;Buttons 
+           variant="outlined" 
+           width='122px' 
+          //  color='text2'  
+           typoColor="primary" 
+           typo="body1" 
+           children="Read more" 
+           /&gt;
+           {/* &lt;Buttons variant="contained" width='172px' typo="body1" children="Finished Reading" /&gt;
+           &lt;Buttons 
+              typoColor="text3" 
+              variant="text" 
+              color="text3" 
+              endIcon={&lt;RightArrowIcon sx={{position: 'relative', left: '15px', top: '10px'}}/&gt;} 
+              width='136px' 
+              typo="body1" 
+              children="Send to" 
+            /&gt; */}
+            {/* &lt;Buttons variant="outlined" children='read more'/&gt; */}
+            {/* hello world */}
+         &lt;/Box&gt;
     &lt;/div&gt;
   )
 }
 &nbsp;
-export default Buttons</pre></td></tr></table></pre>
+export default ButtonsRow</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Mon Mar 07 2022 02:39:15 GMT+0530 (India Standard Time)
+                at Mon Mar 07 2022 02:18:31 GMT+0530 (India Standard Time)
             </div>
-        <script src="../../../prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../../sorter.js"></script>
-        <script src="../../../block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     

@@ -36,14 +36,14 @@ const BookGrid = ({children, label}: Props) => {
         <Grid data-testid="grid_container" container  sx={{width: '912px', marginTop: '25px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '28px'}}>
             {
                 label === undefined ?
-                books.map((book) => {
+                books?.map((book) => {
                     return (
                         <Grid item className={classes.items}>
                             <BookCard children={children} img={book}/>
                         </Grid>
                     )
                 }) : 
-                books.filter((book) => book.status === label).map(item => {
+                books?.filter((book) => book.status === label)?.map(item => {
                     return (
                         <Grid item className={classes.items}>
                             <BookCard status="lib" children={children} img={item} />

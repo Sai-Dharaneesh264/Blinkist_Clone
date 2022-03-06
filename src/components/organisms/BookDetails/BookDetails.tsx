@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { TimeIcon } from '../../Icons'
@@ -15,8 +15,11 @@ const bookCardStyles = makeStyles({
 interface Props {
     bookData: StateProps;
 }
+
+
 const BookDetails = ({ bookData }: Props) => {
     const classes = bookCardStyles();
+   console.log('first book = ', bookData);
     return (
         <div style={{height: '304px'}}>
             <Typography variant="h1">

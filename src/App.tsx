@@ -10,6 +10,9 @@ import {
   Route,
   Routes,
 } from 'react-router-dom'
+import BookPage from './components/organisms/BookPage/BookPage'
+import ButtonsRow from './components/molecules/ButtonsRow/ButtonsRow'
+import BookDetails from './components/organisms/BookDetails/BookDetails';
 const App = () => {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
   if (isLoading) {
@@ -29,6 +32,10 @@ const App = () => {
                 <Route path='/bookdetails/:id' element={<BookDetailPage />} />
               </Routes>
             </Router>
+            {/* <BookPage />
+            <ButtonsRow />
+            <BookDetailPage />
+            <BookDetails bookData={{id: '0', title: 'unknown', author: 'dont know', minutes: 'infinite'}}/> */}
           </ThemeProvider>
     )
   } else {

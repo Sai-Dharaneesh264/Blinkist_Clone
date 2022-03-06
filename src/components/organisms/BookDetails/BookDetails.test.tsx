@@ -1,19 +1,16 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import BookDetails from './BookDetails'
-
 import "@testing-library/jest-dom"
+
 const data = {
-    // id: "1",
-    // image: "/Images/1.png",
+    id: "1",
     title: "Bring Your Human to Work",
     author: "Erica Keswin",
     minutes: "13-minute read",
-    // reads: "",
-    // status: "reading",
-    // type: "Trending"
 }
+console.log('data =', data)
 
-it('checks whether the component renders properly', () => {
+test('checks whether the component renders properly', () => {
     render(<BookDetails bookData={data}/>)
 })
