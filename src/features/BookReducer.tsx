@@ -4,12 +4,10 @@ import { StateProps } from '../components/assets/Types'
 
 export const getBook = createAsyncThunk('books/getBook',
     async (myData: {id: string | undefined, status: string | undefined}) => {
-        // const { id } = info;
-        // console
+
         const { id, status } = myData;
         console.log('getState = ',id);
         console.log('status = ', status);
-        // return { id: '1', author: 'chandu'}
         const { data }  = await axios.patch(`http://localhost:3004/books/${id}`, {
             status: status === 'reading' ? 'finished': 'reading'
         }) 
@@ -69,6 +67,5 @@ const bookSlice = createSlice({
 
 })
 
-// export const { getBooks } = booksSlice.actions;
 
 export default bookSlice.reducer;

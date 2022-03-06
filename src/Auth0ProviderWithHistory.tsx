@@ -6,12 +6,7 @@ interface Props {
 }
 
 const Auth0ProviderWithHistory = ({ children }: Props) => {
-    const domain = process.env.REACT_APP_AUTH0_DOMAIN;
-    const clientId  = process.env.REACT_APP_AUTH0_CLIENT_ID;
-    // const history = useHistory()
-    // const onRedirectCallback = (appState) => {
-    //     history.push(appState?.returnTo || window.location.origin)
-    // }
+
     return (
         <Auth0Provider
         domain='dev-8j1ztg6y.us.auth0.com'

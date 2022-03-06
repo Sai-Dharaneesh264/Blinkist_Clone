@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Grid } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import BookCard from '../../molecules/BookCard/BookCard'
-import { StateProps } from '../../assets/Types'
-// import { getAllBooks as getBooks} from '../../apis/Requests'
-
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '../../../store/store'
 import { getBooks } from '../../../features/BooksReducer'
@@ -27,8 +24,6 @@ interface Props {
 
 
 const BookGrid = ({children, label}: Props) => {
-    // const [books, setBooks] = useState<StateProps[]>([]);
-    const [state, setState] = useState<boolean>(false);
     const classes = useStyles();
     const dispatch = useDispatch()
     const {books} = useSelector((state: RootState)=> state.books);
@@ -51,7 +46,7 @@ const BookGrid = ({children, label}: Props) => {
                 books.filter((book) => book.status === label).map(item => {
                     return (
                         <Grid item className={classes.items}>
-                            <BookCard children={children} img={item} />
+                            <BookCard status="lib" children={children} img={item} />
                         </Grid>
                     )
                 })

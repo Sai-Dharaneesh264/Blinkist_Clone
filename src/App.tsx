@@ -4,7 +4,6 @@ import customTheme from './Themes/customTheme'
 import BookDetailPage from './components/pages/BookDetailPage/BookDetailPage'
 import MyLibrary from './components/pages/MyLibrary/MyLibrary'
 import LandingPage from './components/pages/LandingPage/LandingPage'
-import LoginButton from './LoginButton'
 import { useAuth0 } from '@auth0/auth0-react'
 import {
   BrowserRouter as Router,
