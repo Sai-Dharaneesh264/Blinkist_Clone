@@ -3,9 +3,9 @@ import axios from 'axios'
 import { StateProps } from '../components/assets/Types'
 
 export const getBooks = createAsyncThunk('books/getBooks',
-    async () => {
+    async (data: string) => {
         console.log('entered');
-        const response =  await axios.get('http://localhost:3004/books')
+        const response =  await axios.get(`http://localhost:3004/${data}`)
         return response.data
     }
 )
@@ -16,7 +16,7 @@ interface Props {
 
 const initialState: Props = {
     status: '',
-    books: []
+    books: [{id: '1'}]
 }
 const booksSlice = createSlice({
     name: 'books',

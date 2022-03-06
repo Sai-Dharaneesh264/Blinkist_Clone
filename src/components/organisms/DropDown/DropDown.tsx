@@ -1,70 +1,10 @@
 import React from 'react'
-import { Icon1 } from '../../Icons'
+import { Icon1, DownArrowIcon } from '../../Icons'
 import { Grid, Typography, Tabs, Tab, Box, Link, Menu, MenuList, MenuItem  } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { green } from '@mui/material/colors'
 import NavItem from '../../atoms/NavItems/NavItem'
-const a = [{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-},
-{
-   icon: <Icon1 />,
-   text: 'Entrepreneurship'
-}
-]
+
 
 const useStyles = makeStyles({
    hover: {
@@ -80,6 +20,16 @@ interface ContentProps {
 const Content = ({ anchorEl, handleClose}: ContentProps) => {
    const classes = useStyles();
    const open = Boolean(anchorEl);
+   const ap = [
+      {
+         icon: <Icon1 />,
+         text: 'Entrepreneurship'
+      },
+      {
+         icon: <DownArrowIcon />,
+         text: 'Real Estate'
+      }
+   ]
   return (
         <Menu
         id="basic-menu"
@@ -108,13 +58,17 @@ const Content = ({ anchorEl, handleClose}: ContentProps) => {
       </Box>
          </MenuItem>
          <MenuItem disableRipple >
-         <Grid container sx={{width: '912px', margin: 'auto', height: '264px'}}>
+         <Grid key="dropDown" container sx={{width: '912px', margin: 'auto', height: '264px'}}>
             {
-               a.map(item => {
+               ap.map((item, index) => {
                  return ( 
-                     <Grid item xs={4}>
+                     <Grid key={`item_${index}`} item xs={4}>
                         <Link href="/bookdetails/1">
-                        <NavItem children={item.text} left="12px" startIcon={item.icon} />
+                        <NavItem 
+                        children={item.text} 
+                        left="12px" 
+                        startIcon={item.icon} 
+                        />
                         </Link>
                      </Grid>
                  )

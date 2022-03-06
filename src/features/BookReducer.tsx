@@ -6,8 +6,6 @@ export const getBook = createAsyncThunk('books/getBook',
     async (myData: {id: string | undefined, status: string | undefined}) => {
 
         const { id, status } = myData;
-        console.log('getState = ',id);
-        console.log('status = ', status);
         const { data }  = await axios.patch(`http://localhost:3004/books/${id}`, {
             status: status === 'reading' ? 'finished': 'reading'
         }) 
@@ -19,7 +17,6 @@ export const getOneBook = createAsyncThunk(
     'books/getOneBook',
     async (id: string | undefined) => {
         const { data } = await axios.get(`http://localhost:3004/books/${id}`)
-        console.log('one book = ', data);
         return data;
     }
 )

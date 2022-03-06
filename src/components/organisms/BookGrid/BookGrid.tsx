@@ -29,7 +29,7 @@ const BookGrid = ({children, label}: Props) => {
     const {books} = useSelector((state: RootState)=> state.books);
     
     useEffect(() => {
-       dispatch(getBooks())
+       dispatch(getBooks('books'))
     }, [dispatch])
 
   return (
