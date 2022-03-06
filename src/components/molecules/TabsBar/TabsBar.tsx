@@ -71,7 +71,7 @@ const TabsBar = () => {
         <BookGrid label="reading" children={<ReadAgain label="Finished"/>}/>
         </TabPanel>
         <TabPanel value={value} index={1}>
-        <BookGrid label="Finished" children={<ReadAgain label="Read Again"/>}/>
+        <BookGrid label="finished" children={<ReadAgain label="Read Again"/>}/>
         </TabPanel>
             </Box>
       </div>

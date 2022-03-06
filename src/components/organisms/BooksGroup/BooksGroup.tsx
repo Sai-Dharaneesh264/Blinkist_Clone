@@ -9,6 +9,7 @@ const allProps = {
   height: '52px',
   children: 'Add to library',
   startIcon: <AddIcon sx={{height: '24px', display: 'flex', position: 'relative', top: '5px'}} />
+  
 }
 
 interface  Props {

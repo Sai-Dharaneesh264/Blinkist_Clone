@@ -11,10 +11,10 @@ import {
   Route,
   Routes,
 } from 'react-router-dom'
+import { getBooks } from './requests'
 import LogoutButton from './LogoutButton';
 const App = () => {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
-
   if (isLoading) {
     return (
       <div>Loading...</div>
@@ -24,7 +24,7 @@ const App = () => {
     return  (
 
           <ThemeProvider theme={customTheme}>
-
+            {/* <requests /> */}
             <Router>
               <Routes>
                 <Route path='/' element={<LandingPage />} />
