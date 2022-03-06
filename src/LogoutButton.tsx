@@ -56,7 +56,10 @@ const LogoutButton = () => {
           vertical: 'bottom'
         }}
       >
-        <MenuItem sx={{height: '50px', display: 'flex', alignItems: 'center', padding: '0px', justifyContent: 'center'}} onClick={() => logout({returnTo: window.location.origin})}>Logout</MenuItem>
+        <MenuItem sx={{height: '50px', display: 'flex', alignItems: 'center', padding: '0px', justifyContent: 'center'}} 
+        onClick={() => logout({returnTo: window.location.origin})}>
+          Logout
+        </MenuItem>
       </Menu>
     </div>
   );
