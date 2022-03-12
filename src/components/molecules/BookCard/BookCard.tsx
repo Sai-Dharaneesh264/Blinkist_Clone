@@ -4,6 +4,7 @@ import { Card, CardMedia, CardContent, CardActions, Typography, Link} from '@mui
 import { StateProps } from '../../assets/Types'
 import { useDispatch} from 'react-redux'
 import { getBook } from '../../../features/BookReducer'
+import { getBooks } from '../../../features/BooksReducer'
 interface Props {
   children?: React.ReactNode;
   img: StateProps;
@@ -15,6 +16,7 @@ const CardComponent = ({children, img}: Props) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBook({id: id, status: img.status}));
+    dispatch(getBooks('books'))
   }, [id])
   return (
     <div>
