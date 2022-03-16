@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">73.91% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>23/23</span>
+                <span class='fraction'>17/23</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">77.77% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>7/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">73.91% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>23/23</span>
+                <span class='fraction'>17/23</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -141,7 +141,7 @@
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,7 +149,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -170,12 +170,12 @@
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
@@ -183,12 +183,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -208,7 +208,7 @@ export const getBook = createAsyncThunk('books/getBook',
         const { data }  = await axios.patch(`http://localhost:3004/books/${id}`, {
             status: status === 'reading' ? 'finished': 'reading'
         }) 
-        return data;
+<span class="cstat-no" title="statement not covered" >        return data;</span>
     }
 )
 &nbsp;
@@ -216,7 +216,7 @@ export const getOneBook = createAsyncThunk(
     'books/getOneBook',
     async (id: string | undefined) =&gt; {
         const { data } = await axios.get(`http://localhost:3004/books/${id}`)
-        return data;
+<span class="cstat-no" title="statement not covered" >        return data;</span>
     }
 )
 interface Props {
@@ -236,9 +236,9 @@ const bookSlice = createSlice({
         builder.addCase(getBook.pending, (state, action) =&gt; {
             state.status = 'loading'
         })
-        builder.addCase(getBook.fulfilled, (state, action) =&gt; {
-            state.status = 'success'
-            state.book = action.payload
+        builder.addCase(getBook.fulfilled, <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {
+<span class="cstat-no" title="statement not covered" >            state.status = 'success'</span>
+<span class="cstat-no" title="statement not covered" >            state.book = action.payload</span>
         })
 &nbsp;
         builder.addCase(getBook.rejected, (state, action) =&gt; {
@@ -249,9 +249,9 @@ const bookSlice = createSlice({
             state.status = 'loading'
         })
         
-        builder.addCase(getOneBook.fulfilled, (state, {payload}) =&gt; {
-            state.status = 'success'
-            state.book = payload
+        builder.addCase(getOneBook.fulfilled, <span class="fstat-no" title="function not covered" >(s</span>tate, {payload}) =&gt; {
+<span class="cstat-no" title="statement not covered" >            state.status = 'success'</span>
+<span class="cstat-no" title="statement not covered" >            state.book = payload</span>
         })
 &nbsp;
         builder.addCase(getOneBook.rejected, (state, action) =&gt; {
@@ -271,7 +271,7 @@ export default bookSlice.reducer;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Sat Mar 12 2022 18:00:44 GMT+0530 (India Standard Time)
+                at Wed Mar 16 2022 12:54:38 GMT+0530 (India Standard Time)
             </div>
         <script src="../../prettify.js"></script>
         <script>
